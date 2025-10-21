@@ -1644,7 +1644,7 @@ function loadHardcodedEvents() {
         // Week 1: Oct 27-31 (Madrid time: UTC+1, so 150000Z = 4PM Madrid, 160000Z = 5PM Madrid, etc.)
         '2025-10-27': {
             '16': { title: 'Quantum Computing 101', speaker: 'Enrique Anguiano-Vara' }, // 150000Z UTC = 4PM Madrid
-            '17': { title: 'Hands on Qiskit!', speaker: '' }, // 160000Z UTC = 5PM Madrid
+            '17': { title: 'Hands-on Qiskit!', speaker: '' }, // 160000Z UTC = 5PM Madrid
             '18': { title: 'Qiskit notebook pt.1', speaker: '' } // 170000Z UTC = 6PM Madrid
         },
         '2025-10-28': {
@@ -1654,7 +1654,7 @@ function loadHardcodedEvents() {
             '16': { title: 'Quantum Chemistry', speaker: 'Enrique Anguiano-Vara' } // 150000Z-170000Z = 4-6PM Madrid
         },
         '2025-10-30': {
-            '16': { title: 'QML Introduction', speaker: 'Claudia Zendeja-Morales' } // 150000Z-170000Z = 4-6PM Madrid
+            '16': { title: 'QML Introduction', speaker: 'Claudia Zendejas-Morales' } // 150000Z-170000Z = 4-6PM Madrid
         },
         '2025-10-31': {
             '16': { title: 'Types of quantum computers', speaker: '' }, // 150000Z UTC = 4PM Madrid
@@ -1663,36 +1663,36 @@ function loadHardcodedEvents() {
         
         // Week 2: Nov 3-7
         '2025-11-03': {
-            '16': { title: 'Pasqal', speaker: 'Victor Onofre' }, // 150000Z UTC = 4PM Madrid
-            '17': { title: 'Sparrow Quantum', speaker: 'Oliver Luscombe Nørregaard' }, // 160000Z UTC = 5PM Madrid
-            '18': { title: 'Quandela', speaker: '' }, // 170000Z UTC = 6PM Madrid
+            '16': { title: 'TBA', speaker: 'Victor Onofre (Pasqal)' }, // 150000Z UTC = 4PM Madrid
+            '17': { title: 'TBA', speaker: 'Oliver Luscombe Nørregaard (Sparrow Quantum)' }, // 160000Z UTC = 5PM Madrid
+            '18': { title: 'Full-stack photonic quantum computing', speaker: 'Alexia Salavrakos (Quandela)' }, // 170000Z UTC = 6PM Madrid
             '19': { title: 'EXTRA TIME', speaker: '' } // 180000Z UTC = 7PM Madrid
         },
         '2025-11-04': {
-            '16': { title: 'MadQCI : UPM', speaker: 'Martín Ayuso' }, // 150000Z UTC = 4PM Madrid
-            '17': { title: 'MadQCI to Reality : IMDEA Software', speaker: '' }, // 160000Z UTC = 5PM Madrid
-            '18': { title: 'IMDEA Software', speaker: 'Farzam Nosrati' }, // 170000Z UTC = 6PM Madrid
+            '16': { title: 'MadQCI : UPM', speaker: 'Martín Ayuso (UPM)' }, // 150000Z UTC = 4PM Madrid
+            '17': { title: 'MadQCI to Reality', speaker: 'TBA (IMDEA Software)' }, // 160000Z UTC = 5PM Madrid
+            '18': { title: 'TBA', speaker: 'Farzam Nosrati (IMDEA Software)' }, // 170000Z UTC = 6PM Madrid
             '19': { title: 'EXTRA TIME', speaker: '' } // 180000Z UTC = 7PM Madrid
         },
         '2025-11-05': {
-            '16': { title: 'ICFO', speaker: '' }, // 150000Z UTC = 4PM Madrid
-            '17': { title: 'EXTRA TIME', speaker: '' }, // 160000Z UTC = 5PM Madrid
-            '18': { title: 'GMV', speaker: 'Alexander Benítez Buenache, Antón Makarov, Queralt Portell de Montserrat' }, // 170000Z UTC = 6PM Madrid
+            '16': { title: 'EXTRA TIME', speaker: '' }, // 150000Z UTC = 4PM Madrid
+            '17': { title: 'Certified many-body physics', speaker: 'Antonio Acín (ICFO)' }, // 160000Z UTC = 5PM Madrid
+            '18': { title: 'TBA', speaker: 'Helen Urgelles Pérez (UPV)' }, // 170000Z UTC = 6PM Madrid
             '19': { title: 'EXTRA TIME', speaker: '' } // 180000Z UTC = 7PM Madrid
         },
         '2025-11-06': {
-            '16': { title: 'ICMM-UAM - QML Research', speaker: 'Yue Ban' }, // 150000Z UTC = 4PM Madrid
-            '17': { title: 'ICMM-UAM - QML Research', speaker: 'Xi Chen' }, // 160000Z UTC = 5PM Madrid
-            '18': { title: 'IFF-CSIC - Real-Time Dynamics in a (2+1)-D Gauge Theory', speaker: 'César Benito' }, // 170000Z UTC = 6PM Madrid
+            '16': { title: 'QML Research at ICMM-UAM (TBA)', speaker: 'Yue Ban (ICMM-UAM)' }, // 150000Z UTC = 4PM Madrid
+            '17': { title: 'QML Research at ICMM-UAM (TBA)', speaker: 'Xi Chen (ICMM-UAM)' }, // 160000Z UTC = 5PM Madrid
+            '18': { title: 'Real-Time Dynamics in a (2+1)-D Gauge Theory', speaker: 'César Benito (IFF-CSIC)' }, // 170000Z UTC = 6PM Madrid
             '19': { title: 'EXTRA TIME', speaker: '' } // 180000Z UTC = 7PM Madrid
         },
         '2025-11-07': {
-            '10': { title: 'Multiverse Computing', speaker: 'Román Orús' }, // 090000Z UTC = 10AM Madrid
-            '16': { title: 'QWorld', speaker: 'Claudia Zendeja Morales' }, // 150000Z UTC = 4PM Madrid
-            '16.5': { title: 'CPrA, the spanish QCousin', speaker: '' }, // 153000Z UTC = 4:30PM Madrid
-            '17': { title: 'IBM Quantum', speaker: 'Ismael Faro' }, // 160000Z UTC = 5PM Madrid
-            '18': { title: 'Quantum Kipu - Protein folding', speaker: 'Alejandro Gómez Cadavid' }, // 170000Z UTC = 6PM Madrid
-            '19': { title: 'CPrA : Hackathons Introduction', speaker: '' } // 180000Z UTC = 7PM Madrid
+            '10': { title: 'TBA', speaker: 'Román Orús (Multiverse Computing)' }, // 090000Z UTC = 10AM Madrid
+            '16': { title: 'QWorld', speaker: 'Claudia Zendejas-Morales' }, // 150000Z UTC = 4PM Madrid
+            '16.5': { title: 'CPrA: the Spanish QCousin', speaker: '' }, // 153000Z UTC = 4:30PM Madrid
+            '17': { title: 'IBM Quantum', speaker: 'Ismael Faro (IBM Quantum)' }, // 160000Z UTC = 5PM Madrid
+            '18': { title: 'Protein folding', speaker: 'Alejandro Gómez Cadavid (Quantum Kipu)' }, // 170000Z UTC = 6PM Madrid
+            '19': { title: 'CPrA : Hackathon Introduction', speaker: '' } // 180000Z UTC = 7PM Madrid
         }
     };
     populateWeeklyCalendar();
@@ -2015,3 +2015,5 @@ function initializeWeeklyCalendar() {
 
 // Initialize weekly calendar functionality on page load
 console.log('📅 Weekly calendar system ready for MadQFF\'25');
+
+
