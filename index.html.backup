@@ -25,10 +25,7 @@
     <header class="header">
         <nav class="nav">
             <div class="nav-brand">
-                <picture>
-        <source srcset="Fall Fest Graphics/Emojis/webp/Entanglement.webp" type="image/webp">
-        <img src="Fall Fest Graphics/Emojis/Entanglement.png" alt="Quantum Entanglement" class="logo">
-    </picture>
+                <img src="Fall Fest Graphics/Emojis/Entanglement.png" alt="Quantum Entanglement" class="logo">
                 <span class="brand-text">MadQFF'25</span>
             </div>
             <div class="nav-links">
@@ -50,10 +47,7 @@
     <section id="home" class="hero">
         <!-- Animated Background -->
         <div class="hero-bg">
-            <picture>
-        <source srcset="Fall Fest Graphics/Illustration Exports/webp/Full_Illustration.webp" type="image/webp">
-        <img src="Fall Fest Graphics/Illustration Exports/Full_Illustration.png" alt="Quantum Illustration" class="hero-illustration" loading="eager" decoding="async">
-    </picture>
+            <img src="Fall Fest Graphics/Illustration Exports/Full_Illustration.png" alt="Quantum Illustration" class="hero-illustration" loading="eager" decoding="async">
             <div class="quantum-particles"></div>
             <div class="quantum-grid"></div>
         </div>
@@ -74,10 +68,7 @@
             <!-- Enhanced Badge Section -->
             <div class="hero-badge-section">
                 <div class="hero-badge">
-                    <picture>
-        <source srcset="Fall Fest Graphics/Badge/webp/Badge.webp" type="image/webp">
-        <img src="Fall Fest Graphics/Badge/Badge.png" alt="QFF Badge" class="badge-img" loading="lazy" decoding="async">
-    </picture>
+                    <img src="Fall Fest Graphics/Badge/Badge.png" alt="QFF Badge" class="badge-img" loading="lazy" decoding="async">
                     <div class="badge-glow"></div>
                 </div>
                 <div class="hero-dates">
@@ -102,10 +93,7 @@
                     <small class="hero-subtitle-org">
                         <span class="org-prefix">organized by</span>
                         <a href="https://uam-cpra.github.io/" target="_blank" rel="noopener">
-                            <picture>
-        <source srcset="webp/CPrA.webp" type="image/webp">
-        <img src="CPrA.png" alt="CPrA" class="org-logo" style="height: 6.5em;" loading="lazy" decoding="async">
-    </picture>
+                            <img src="CPrA.png" alt="CPrA" class="org-logo" style="height: 6.5em;" loading="lazy" decoding="async">
                         </a>
                         <span class="org-name">UAM - CPrA</span>
                     </small>
@@ -194,10 +182,7 @@
                 <!-- Claudia Zendejas-Morales -->
                 <div class="contributor-card">
                     <div class="contributor-avatar">
-                        <picture>
-        <source srcset="profiles/webp/CladuiaZendejasMorales.webp" type="image/webp">
-        <img src="profiles/CladuiaZendejasMorales.png" alt="Claudia Zendejas-Morales" loading="lazy" decoding="async">
-    </picture>
+                        <img src="profiles/CladuiaZendejasMorales.png" alt="Oliver Luscombe Norregaard" class="coordinator-img" loading="lazy" decoding="async">
                     </div>
                     <div class="contributor-name">Claudia Zendejas-Morales</div>
                     <div class="contributor-company">QWorld / CPrA Associate</div>
@@ -224,10 +209,7 @@
                 <!-- Oliver Luscombe Norregaard -->
                 <div class="contributor-card">
                     <div class="contributor-avatar">
-                        <picture>
-        <source srcset="profiles/webp/OliverLuscombeNorregaard.webp" type="image/webp">
-        <img src="profiles/OliverLuscombeNorregaard.png" alt="Oliver Luscombe Norregaard" loading="lazy" decoding="async">
-    </picture>
+                        <img src="profiles/OliverLuscombeNorregaard.png" alt="Oliver Luscombe Norregaard" class="coordinator-img" loading="lazy" decoding="async">
                     </div>
                     <div class="contributor-name">Oliver Luscombe Norregaard</div>
                     <div class="contributor-company">Sparrow Quantum</div>
@@ -342,10 +324,7 @@
                     <!-- Enrique Anguiano-Vara -->
                     <div class="coordinator-card">
                         <div class="coordinator-avatar">
-                            <picture>
-        <source srcset="profiles/webp/me.webp" type="image/webp">
-        <img src="profiles/me.png" alt="Enrique Anguiano-Vara" loading="lazy" decoding="async">
-    </picture>
+                            <img src="profiles/me.png" alt="Enrique Anguiano-Vara" class="coordinator-img" loading="lazy" decoding="async">
                         </div>
                         <div class="coordinator-name">Enrique Anguiano-Vara</div>
                         <div class="coordinator-role">Lead Organizer / CPrA president</div>
@@ -363,10 +342,7 @@
                     <!-- Abdullah Al Omar Galib -->
                     <div class="coordinator-card">
                         <div class="coordinator-avatar">
-                            <picture>
-        <source srcset="profiles/webp/abdullahAlOmarGalib.webp" type="image/webp">
-        <img src="profiles/abdullahAlOmarGalib.png" alt="Abdullah Al Omar Galib" loading="lazy" decoding="async">
-    </picture>
+                            <img src="profiles/abdullahAlOmarGalib.png" alt="Abdullah Al Omar Galib" class="coordinator-img" loading="lazy" decoding="async">
                         </div>
                         <div class="coordinator-name">Abdullah Al Omar Galib</div>
                         <div class="coordinator-role">Co-organizer / CPrA Associate</div>
@@ -418,28 +394,16 @@
                     <div class="qff-intro-visual">
                         <div class="quantum-showcase">
                             <div class="showcase-orb showcase-orb-1">
-                                <picture>
-        <source srcset="Fall Fest Graphics/Emojis/webp/Qiskit_01.webp" type="image/webp">
-        <img src="Fall Fest Graphics/Emojis/Qiskit_01.png" alt="Qiskit" class="showcase-icon">
-    </picture>
+                                <img src="Fall Fest Graphics/Emojis/Qiskit_01.png" alt="Qiskit" class="showcase-icon">
                             </div>
                             <div class="showcase-orb showcase-orb-2">
-                                <picture>
-        <source srcset="Fall Fest Graphics/Emojis/webp/Circuit.webp" type="image/webp">
-        <img src="Fall Fest Graphics/Emojis/Circuit.png" alt="Circuit" class="showcase-icon">
-    </picture>
+                                <img src="Fall Fest Graphics/Emojis/Circuit.png" alt="Circuit" class="showcase-icon">
                             </div>
                             <div class="showcase-orb showcase-orb-3">
-                                <picture>
-        <source srcset="Fall Fest Graphics/Emojis/webp/Entanglement.webp" type="image/webp">
-        <img src="Fall Fest Graphics/Emojis/Entanglement.png" alt="Entanglement" class="showcase-icon">
-    </picture>
+                                <img src="Fall Fest Graphics/Emojis/Entanglement.png" alt="Entanglement" class="showcase-icon">
                             </div>
                             <div class="showcase-center">
-                                <picture>
-        <source srcset="Fall Fest Graphics/Badge/webp/Badge.webp" type="image/webp">
-        <img src="Fall Fest Graphics/Badge/Badge.png" alt="QFF Badge" class="showcase-badge">
-    </picture>
+                                <img src="Fall Fest Graphics/Badge/Badge.png" alt="QFF Badge" class="showcase-badge">
                             </div>
                         </div>
                     </div>
@@ -462,10 +426,7 @@
                         <div class="madrid-visual">
                             <div class="madrid-badge">
                                 <a href="https://uam-cpra.github.io/" target="_blank">
-                                    <picture>
-        <source srcset="webp/CPrA.webp" type="image/webp">
-        <img src="CPrA.png" alt="CPrA" class="cpra-logo">
-    </picture>
+                                    <img src="CPrA.png" alt="CPrA" class="cpra-logo">
                                 </a>
                                 <div class="badge-text">
                                     <span class="badge-location">Madrid, Spain</span>
@@ -541,10 +502,7 @@
                         <div class="week-header">
                             <div class="week-number">01</div>
                             <div class="week-icon">
-                                <picture>
-        <source srcset="Fall Fest Graphics/Emojis/webp/Timeline_01.webp" type="image/webp">
-        <img src="Fall Fest Graphics/Emojis/Timeline_01.png" alt="Timeline 1" class="card-timeline">
-    </picture>
+                                <img src="Fall Fest Graphics/Emojis/Timeline_01.png" alt="Timeline 1" class="card-timeline">
                             </div>
                         </div>
                         <div class="week-content">
@@ -561,10 +519,7 @@
                         <div class="week-header">
                             <div class="week-number">02</div>
                             <div class="week-icon">
-                                <picture>
-        <source srcset="Fall Fest Graphics/Emojis/webp/Timeline_02.webp" type="image/webp">
-        <img src="Fall Fest Graphics/Emojis/Timeline_02.png" alt="Timeline 2" class="card-timeline">
-    </picture>
+                                <img src="Fall Fest Graphics/Emojis/Timeline_02.png" alt="Timeline 2" class="card-timeline">
                             </div>
                         </div>
                         <div class="week-content">
@@ -581,10 +536,7 @@
                         <div class="week-header">
                             <div class="week-number">03</div>
                             <div class="week-icon">
-                                <picture>
-        <source srcset="Fall Fest Graphics/Emojis/webp/Timeline_04.webp" type="image/webp">
-        <img src="Fall Fest Graphics/Emojis/Timeline_04.png" alt="Timeline 4" class="card-timeline">
-    </picture>
+                                <img src="Fall Fest Graphics/Emojis/Timeline_04.png" alt="Timeline 4" class="card-timeline">
                             </div>
                         </div>
                         <div class="week-content">
@@ -972,34 +924,19 @@
                 <!-- Background Elements -->
                 <div class="cta-bg-elements">
                     <div class="floating-element element-2">
-                        <picture>
-        <source srcset="Fall Fest Graphics/Emojis/webp/Circuit.webp" type="image/webp">
-        <img src="Fall Fest Graphics/Emojis/Circuit.png" alt="Circuit" class="element-icon rotate-animation" loading="lazy" decoding="async">
-    </picture>
+                        <img src="Fall Fest Graphics/Emojis/Circuit.png" alt="Circuit" class="element-icon rotate-animation" loading="lazy" decoding="async">
                     </div>
                     <div class="floating-element element-3">
-                        <picture>
-        <source srcset="Fall Fest Graphics/Emojis/webp/Entanglement.webp" type="image/webp">
-        <img src="Fall Fest Graphics/Emojis/Entanglement.png" alt="Entanglement" class="element-icon float-animation" loading="lazy" decoding="async">
-    </picture>
+                        <img src="Fall Fest Graphics/Emojis/Entanglement.png" alt="Entanglement" class="element-icon float-animation" loading="lazy" decoding="async">
                     </div>
                     <div class="floating-element element-4">
-                        <picture>
-        <source srcset="Fall Fest Graphics/Emojis/webp/Atom_01.webp" type="image/webp">
-        <img src="Fall Fest Graphics/Emojis/Atom_01.png" alt="Atom" class="element-icon bounce-animation" loading="lazy" decoding="async">
-    </picture>
+                        <img src="Fall Fest Graphics/Emojis/Atom_01.png" alt="Atom" class="element-icon bounce-animation" loading="lazy" decoding="async">
                     </div>
                     <div class="floating-element element-5">
-                        <picture>
-        <source srcset="Fall Fest Graphics/Emojis/webp/Badge_01.webp" type="image/webp">
-        <img src="Fall Fest Graphics/Emojis/Badge_01.png" alt="Badge" class="element-icon swing-animation" loading="lazy" decoding="async">
-    </picture>
+                        <img src="Fall Fest Graphics/Emojis/Badge_01.png" alt="Badge" class="element-icon swing-animation" loading="lazy" decoding="async">
                     </div>
                     <div class="floating-element element-6">
-                        <picture>
-        <source srcset="Fall Fest Graphics/Emojis/webp/Text_Quantum_01.webp" type="image/webp">
-        <img src="Fall Fest Graphics/Emojis/Text_Quantum_01.png" alt="Quantum" class="element-icon glow-animation" loading="lazy" decoding="async">
-    </picture>
+                        <img src="Fall Fest Graphics/Emojis/Text_Quantum_01.png" alt="Quantum" class="element-icon glow-animation" loading="lazy" decoding="async">
                     </div>
                 </div>
 
