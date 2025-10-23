@@ -1,0 +1,228 @@
+================================================================================
+MadQFF'25 WEBSITE OPTIMIZATION TODO LIST
+================================================================================
+Goal: Make the website load as fast as possible on GitHub Pages
+Target: LCP < 2.5s, FID < 100ms, CLS < 0.1
+
+================================================================================
+PRIORITY 1: IMAGE OPTIMIZATION (BIGGEST IMPACT - 60-80% size reduction)
+================================================================================
+
+[x] 1. Install Pillow library for image conversion
+    Command: pip install Pillow
+    or run: python3 install.py
+
+[ ] 2. Convert all PNG images to WebP format
+    [ ] Run: python3 image_converter.py
+    [ ] Convert hero illustration (Full_Illustration.png) at 90% quality
+    [ ] Convert Badge images at 85% quality
+    [ ] Convert Emoji icons at 80% quality
+    [ ] Convert profile images at 85% quality
+    [ ] Convert CPrA.png at 85% quality
+
+[ ] 3. Update HTML to use WebP with PNG fallback
+    [ ] Replace hero image with <picture> tag
+    [ ] Replace badge images with <picture> tag
+    [ ] Replace emoji images with <picture> tag
+    [ ] Replace profile images with <picture> tag
+    [ ] Replace CPrA.png with <picture> tag
+
+[ ] 4. Add preload for critical hero image
+    Add to <head>:
+    <link rel="preload" as="image" 
+          href="Fall Fest Graphics/Illustration Exports/Full_Illustration.webp" 
+          type="image/webp">
+
+[ ] 5. Verify all images have proper lazy loading
+    [ ] Hero image: loading="eager"
+    [ ] Below-fold images: loading="lazy"
+
+Expected Result: 60-80% reduction in image file sizes
+                 Faster initial page load
+
+================================================================================
+PRIORITY 2: CSS OPTIMIZATION (10-20% size reduction)
+================================================================================
+
+[ ] 6. Minify CSS file
+    [ ] Install clean-css-cli: npm install -g clean-css-cli
+    [ ] Run: npx clean-css-cli -o styles.min.css styles.css
+    [ ] Update index.html to use styles.min.css
+
+[ ] 7. Extract critical CSS (optional, advanced)
+    [ ] Identify above-the-fold styles
+    [ ] Inline critical CSS in <head>
+    [ ] Load remaining CSS asynchronously
+
+Expected Result: 10-20% reduction in CSS size
+                 Faster first paint
+
+================================================================================
+PRIORITY 3: JAVASCRIPT OPTIMIZATION (10-15% size reduction)
+================================================================================
+
+[ ] 8. Minify JavaScript file
+    [ ] Install terser: npm install -g terser
+    [ ] Run: npx terser script.js -o script.min.js -c -m
+    [ ] Update index.html to use script.min.js
+
+[ ] 9. Verify async/defer attributes
+    [ ] Leaflet JS: already has defer ✓
+    [ ] script.js: add defer if not present
+    [ ] Font Awesome: consider replacing with SVG icons
+
+Expected Result: 10-15% reduction in JS size
+                 Non-blocking script execution
+
+================================================================================
+PRIORITY 4: FONT OPTIMIZATION (Reduce ~800KB Font Awesome)
+================================================================================
+
+[ ] 10. Optimize Google Fonts
+    Current: family=Inter:wght@300;400;500;600;700
+    [ ] Change to: family=Inter:wght@400;600;700 (remove 300, 500)
+    Already has &display=swap ✓
+
+[ ] 11. Replace Font Awesome with inline SVG icons
+    [ ] Identify used icons: calendar, users, trophy, globe, etc.
+    [ ] Download SVG versions from Font Awesome
+    [ ] Replace <i class="fas fa-*"> with inline <svg>
+    OR
+    [ ] Use subset of Font Awesome with only needed icons
+
+Expected Result: Eliminate 800KB+ Font Awesome stylesheet
+                 Faster font loading
+
+================================================================================
+PRIORITY 5: CACHING & SERVICE WORKER (Repeat visits 90% faster)
+================================================================================
+
+[ ] 12. Create service worker for caching
+    [ ] Create sw.js file
+    [ ] Cache static assets (HTML, CSS, JS, images)
+    [ ] Register service worker in index.html
+
+[ ] 13. Add cache headers (GitHub Pages limitation workaround)
+    Note: Can't modify server headers on GitHub Pages
+    Service worker provides caching instead
+
+Expected Result: Near-instant repeat page loads
+                 Offline capability
+
+================================================================================
+PRIORITY 6: HTML OPTIMIZATION
+================================================================================
+
+[ ] 14. Minify HTML (optional)
+    [ ] Use html-minifier: npm install -g html-minifier
+    [ ] Run: html-minifier --collapse-whitespace index.html -o index.min.html
+
+[ ] 15. Remove unused HTML elements
+    [ ] Check for hidden/unused sections
+    [ ] Remove commented-out code
+
+Expected Result: 5-10% reduction in HTML size
+
+================================================================================
+PRIORITY 7: THIRD-PARTY RESOURCES
+================================================================================
+
+[ ] 16. Review Leaflet map necessity
+    [ ] Can it be lazy-loaded?
+    [ ] Can map tiles be optimized?
+
+[ ] 17. Optimize calendar.ics
+    Already optimized ✓
+
+Expected Result: Faster third-party resource loading
+
+================================================================================
+PRIORITY 8: TESTING & VALIDATION
+================================================================================
+
+[ ] 18. Run Lighthouse audit (BEFORE optimization)
+    [ ] Open Chrome DevTools
+    [ ] Go to Lighthouse tab
+    [ ] Run audit and save report
+    [ ] Note: Performance, LCP, FID, CLS scores
+
+[ ] 19. Implement optimizations (1-17 above)
+
+[ ] 20. Run Lighthouse audit (AFTER optimization)
+    [ ] Compare before/after scores
+    [ ] Verify improvements
+    [ ] Check for any new issues
+
+[ ] 21. Test on different devices
+    [ ] Desktop (Chrome, Firefox)
+    [ ] Mobile (Chrome, Safari)
+    [ ] Tablet
+
+[ ] 22. Test on slow network
+    [ ] Chrome DevTools > Network > Slow 3G
+    [ ] Verify acceptable load times
+
+Expected Result: Lighthouse score > 90
+                 LCP < 2.5s, FID < 100ms
+
+================================================================================
+TOOLS NEEDED
+================================================================================
+
+✓ Python 3 (already installed)
+✓ pip (already installed)
+[x] Pillow: pip install Pillow
+[x] Node.js/npm (for minifiers)
+    Install: https://nodejs.org/
+[ ] clean-css-cli: npm install -g clean-css-cli
+[ ] terser: npm install -g terser
+[ ] html-minifier (optional): npm install -g html-minifier
+
+================================================================================
+QUICK START GUIDE
+================================================================================
+
+1. IMAGES (Biggest Impact):
+   python3 install.py          # Install Pillow
+   python3 image_converter.py  # Convert all images to WebP
+   
+2. CSS:
+   npx clean-css-cli -o styles.min.css styles.css
+   
+3. JS:
+   npx terser script.js -o script.min.js -c -m
+   
+4. Update index.html to use .min files and WebP images
+
+5. Test with Lighthouse
+
+================================================================================
+EXPECTED PERFORMANCE GAINS
+================================================================================
+
+Before Optimization:
+- Page Size: ~5-10 MB
+- Load Time: 5-15 seconds
+- LCP: 4-8 seconds
+
+After Optimization:
+- Page Size: ~1-2 MB (60-80% reduction)
+- Load Time: 1-3 seconds (70-80% faster)
+- LCP: < 2.5 seconds
+
+Repeat Visits (with Service Worker):
+- Load Time: < 0.5 seconds (near instant)
+
+================================================================================
+NOTES
+================================================================================
+
+- GitHub Pages limitations: Can't modify server headers or use server-side rendering
+- Focus on client-side optimizations: images, minification, caching
+- Keep original files as backup (don't delete .png after converting to .webp)
+- Test thoroughly after each optimization step
+- Commit changes to git frequently
+
+================================================================================
+LAST UPDATED: October 24, 2025
+================================================================================
