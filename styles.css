@@ -1657,12 +1657,19 @@ section {
     border: 3px solid rgba(255, 255, 255, 0.2);
     transition: all 0.3s ease;
     flex-shrink: 0;
+    overflow: hidden;
 }
 
 .contributor-card:hover .contributor-avatar {
     transform: scale(1.1);
     border-color: var(--accent-cyan);
     box-shadow: 0 0 20px rgba(99, 102, 241, 0.5);
+}
+
+.contributor-avatar picture {
+    width: 100%;
+    height: 100%;
+    display: flex;
 }
 
 .contributor-avatar img {
@@ -1828,12 +1835,19 @@ section {
     border: 3px solid rgba(255, 255, 255, 0.2);
     transition: all 0.3s ease;
     flex-shrink: 0;
+    overflow: hidden;
 }
 
 .coordinator-card:hover .coordinator-avatar {
     transform: scale(1.1);
     border-color: var(--accent-cyan);
     box-shadow: 0 0 20px rgba(99, 102, 241, 0.5);
+}
+
+.coordinator-avatar picture {
+    width: 100%;
+    height: 100%;
+    display: flex;
 }
 
 .coordinator-avatar img {
