@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MadQFF'25</title>
+    
+    <!-- IMPORTANT: IF WE DO NOT HAVE THE RIGHT FOR ALL THE LOGOS, SET IT TO FALSE -->
+    <script> const WE_HAVE_RIGHTS_FOR_ALL_THE_LOGOS = false; </script>
+
+    <link rel="icon" type="image/png" href="Fall Fest Graphics/Emojis/Entanglement.png">
+    <link rel="shortcut icon" type="image/png" href="Fall Fest Graphics/Emojis/Entanglement.png">
+    <link rel="apple-touch-icon" href="Fall Fest Graphics/Emojis/Entanglement.png">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Preconnect to speed up external resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <img src="Fall Fest Graphics/Emojis/Entanglement.png" alt="Quantum Entanglement" class="logo">
+                <span class="brand-text">MadQFF'25</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#sponsors" class="nav-link">Contributors</a>
+                <a href="#what-is-qff" class="nav-link">What is QFF?</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#calendar" class="nav-link">Calendar</a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <!-- Animated Background -->
+        <div class="hero-bg">
+            <img src="Fall Fest Graphics/Illustration Exports/Full_Illustration.png" alt="Quantum Illustration" class="hero-illustration" loading="eager" decoding="async">
+            <div class="quantum-particles"></div>
+            <div class="quantum-grid"></div>
+        </div>
+        
+        <!-- Floating Quantum Elements -->
+        <div class="quantum-elements">
+            <div class="quantum-orb quantum-orb-1"></div>
+            <div class="quantum-orb quantum-orb-2"></div>
+            <div class="quantum-orb quantum-orb-3"></div>
+            <div class="quantum-circuit">
+                <div class="circuit-line"></div>
+                <div class="circuit-gate"></div>
+                <div class="circuit-gate"></div>
+            </div>
+        </div>
+
+        <div class="hero-content">
+            <!-- Enhanced Badge Section -->
+            <div class="hero-badge-section">
+                <div class="hero-badge">
+                    <img src="Fall Fest Graphics/Badge/Badge.png" alt="QFF Badge" class="badge-img" loading="lazy" decoding="async">
+                    <div class="badge-glow"></div>
+                </div>
+                <div class="hero-dates">
+                    <div class="date-card">
+                        <i class="fas fa-calendar-alt date-icon"></i>
+                        <div class="date-content">
+                            <span class="date-label">Festival Dates</span>
+                            <span class="date-gradient">
+                                Oct <strong>27</strong> &ndash; Nov <strong>14</strong>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Title with Typewriter Effect -->
+            <div class="hero-title-container">
+                <h1 class="hero-title">
+                    <span class="title-line">
+                        <span class="gradient-text typewriter">Madrid Qiskit Fall Fest 2025</span>
+                    </span>
+                    <small class="hero-subtitle-org">
+                        <span class="org-prefix">organized by</span>
+                        <a href="https://uam-cpra.github.io/" target="_blank" rel="noopener">
+                            <img src="CPrA.png" alt="CPrA" class="org-logo" style="height: 6.5em;" loading="lazy" decoding="async">
+                        </a>
+                        <span class="org-name">UAM - CPrA</span>
+                    </small>
+                </h1>
+            </div>
+
+            <!-- Enhanced Description -->
+            <div class="hero-description">
+                
+                <!-- Key Features -->
+                <div class="hero-features">
+                    <div class="feature-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Beginner Friendly</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-users"></i>
+                        <span>Expert Speakers</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-trophy"></i>
+                        <span>Challenge Awards</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-globe"></i>
+                        <span>Online/Hybrid Format</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Enhanced CTA Section -->
+            <div class="hero-cta">
+                <div class="cta-primary">
+                    <a href="https://forms.gle/t8v9HdDeydXYwasa6" target="_blank" class="btn btn-primary btn-glow">
+                        <span>Register Now</span>
+                        <div class="btn-shimmer"></div>
+                    </a>
+                </div>
+                <div class="cta-secondary">
+                    <a href="#calendar" class="btn btn-secondary">
+                        <i class="fas fa-calendar"></i>
+                        View Program
+                    </a>
+                    <a href="https://maps.google.com/?q=Escuela+Politécnica+Superior+UAM+Madrid" target="_blank" class="btn btn-secondary">
+                        <i class="fas fa-map-marker-alt"></i>
+                        View Location
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <span class="scroll-text">Explore the Journey</span>
+        </div>
+    </section>
+
+    <!-- Sponsors & Partners Section -->
+    <section id="sponsors" class="sponsors-section">
+        <div class="container">
+            <h2 class="section-title" style="text-align: center; margin-bottom: 3rem; font-size: 2rem; color: var(--text-primary);">
+                Contributors to MadQFF'25
+            </h2>
+            <div class="contributors-grid">
+                <!-- Román Orús -->
+                <div class="contributor-card">
+                    <div class="contributor-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="contributor-name">Román Orús</div>
+                    <div class="contributor-company">Multiverse Computing</div>
+                </div>
+
+                <!-- Ismael Faro -->
+                <div class="contributor-card">
+                    <div class="contributor-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="contributor-name">Ismael Faro</div>
+                    <div class="contributor-company">IBM Research</div>
+                </div>
+
+                <!-- Claudia Zendejas-Morales -->
+                <div class="contributor-card">
+                    <div class="contributor-avatar">
+                        <img src="profiles/CladuiaZendejasMorales.png" alt="Oliver Luscombe Norregaard" class="coordinator-img" loading="lazy" decoding="async">
+                    </div>
+                    <div class="contributor-name">Claudia Zendejas-Morales</div>
+                    <div class="contributor-company">QWorld / CPrA Associate</div>
+                </div>
+
+                <!-- Alejandro Gómez Cadavid -->
+                <div class="contributor-card">
+                    <div class="contributor-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="contributor-name">Alejandro Gómez Cadavid</div>
+                    <div class="contributor-company">Kipu Quantum</div>
+                </div>
+
+                <!-- Victor Onofre -->
+                <div class="contributor-card">
+                    <div class="contributor-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="contributor-name">Victor Onofre</div>
+                    <div class="contributor-company">Pasqal</div>
+                </div>
+
+                <!-- Oliver Luscombe Norregaard -->
+                <div class="contributor-card">
+                    <div class="contributor-avatar">
+                        <img src="profiles/OliverLuscombeNorregaard.png" alt="Oliver Luscombe Norregaard" class="coordinator-img" loading="lazy" decoding="async">
+                    </div>
+                    <div class="contributor-name">Oliver Luscombe Norregaard</div>
+                    <div class="contributor-company">Sparrow Quantum</div>
+                </div>
+
+                <!-- ICFO -->
+                <div class="contributor-card">
+                    <div class="contributor-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="contributor-name">Antonio Acín</div>
+                    <div class="contributor-company">ICFO (Institut de Ciències Fotòniques)</div>
+                </div>
+
+                <div class="contributor-card">
+                    <div class="contributor-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="contributor-name">Alexia Salavrakos</div>
+                    <div class="contributor-company">Quandela</div>
+                </div>
+
+                <!-- Farzam Nosrati -->
+                <div class="contributor-card">
+                    <div class="contributor-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="contributor-name">Farzam Nosrati</div>
+                    <div class="contributor-company">IMDEA Software Institute</div>
+                </div>
+
+                <!-- David Rincón -->
+                <div class="contributor-card">
+                    <div class="contributor-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="contributor-name">David Rincón</div>
+                    <div class="contributor-company">REDIMadrid</div>
+                </div>
+
+                <!-- Vicente Martín -->
+                <div class="contributor-card">
+                    <div class="contributor-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="contributor-name">Vicente Martín</div>
+                    <div class="contributor-company">GIICC UPM</div>
+                </div>
+
+                <!-- César Sánchez -->
+                <div class="contributor-card">
+                    <div class="contributor-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="contributor-name">César Sánchez</div>
+                    <div class="contributor-company">REDIMadrid</div>
+                </div>
+
+                <!-- César Benito -->
+                <div class="contributor-card">
+                    <div class="contributor-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="contributor-name">César Benito</div>
+                    <div class="contributor-company">IFT Madrid</div>
+                </div>
+
+                <!-- Yue Ban -->
+                <div class="contributor-card">
+                    <div class="contributor-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="contributor-name">Yue Ban</div>
+                    <div class="contributor-company">ICMM - CSIC</div>
+                </div>
+
+                <!-- Xi Cheng -->
+                <div class="contributor-card">
+                    <div class="contributor-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="contributor-name">Xi Cheng</div>
+                    <div class="contributor-company">ICMM - CSIC</div>
+                </div>
+
+                <div class="contributor-card">
+                    <div class="contributor-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="contributor-name">Helen Urgelles</div>
+                    <div class="contributor-company">UPV</div>
+                </div>
+
+
+                <!-- Juan David de los Rios Mahecha -->
+                <div class="contributor-card">
+                    <div class="contributor-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="contributor-name">Juan David de los Rios Mahecha</div>
+                    <div class="contributor-company">CPrA Associate</div>
+                </div>
+            </div>
+
+            <!-- Coordinators Section -->
+            <div class="coordinators-section">
+                <h3 class="coordinators-title">
+                    <i class="fas fa-users-cog"></i>
+                    MadQFF'25 Coordinators
+                </h3>
+                <div class="coordinators-grid">
+                    <!-- Enrique Anguiano-Vara -->
+                    <div class="coordinator-card">
+                        <div class="coordinator-avatar">
+                            <img src="profiles/me.png" alt="Enrique Anguiano-Vara" class="coordinator-img" loading="lazy" decoding="async">
+                        </div>
+                        <div class="coordinator-name">Enrique Anguiano-Vara</div>
+                        <div class="coordinator-role">Lead Organizer / CPrA president</div>
+                    </div>
+
+                    <!-- Anna Kristha Almazán Favela -->
+                    <div class="coordinator-card">
+                        <div class="coordinator-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="coordinator-name">Anna Kristha Almazán Favela</div>
+                        <div class="coordinator-role">Co-organizer / CPrA Associate</div>
+                    </div>
+
+                    <!-- Abdullah Al Omar Galib -->
+                    <div class="coordinator-card">
+                        <div class="coordinator-avatar">
+                            <img src="profiles/abdullahAlOmarGalib.png" alt="Abdullah Al Omar Galib" class="coordinator-img" loading="lazy" decoding="async">
+                        </div>
+                        <div class="coordinator-name">Abdullah Al Omar Galib</div>
+                        <div class="coordinator-role">Co-organizer / CPrA Associate</div>
+                    </div>
+
+                    <!-- Ariadna Prat Bosch -->
+                    <div class="coordinator-card">
+                        <div class="coordinator-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="coordinator-name">Ariadna Prat Bosch</div>
+                        <div class="coordinator-role">Co-organizer / CPrA Associate</div>
+                    </div>
+
+                    <!-- Enrique Sánchez Ibáñez -->
+                    <div class="coordinator-card">
+                        <div class="coordinator-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="coordinator-name">Enrique Sánchez Ibáñez</div>
+                        <div class="coordinator-role">Co-organizer / CPrA Associate</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What is Qiskit Fall Fest Section -->
+    <section id="what-is-qff" class="what-is-qff">
+        <div class="container">
+            <div class="qff-content">
+                <!-- Main Introduction -->
+                <div class="qff-intro">
+                    <div class="qff-intro-content">
+                        <div class="section-badge">
+                            <i class="fas fa-question-circle"></i>
+                            <span>What is QFF?</span>
+                        </div>
+                        <h2 class="qff-title">
+                            <span class="highlight-text">Qiskit Fall Fest</span> is a collection of quantum computing events around the world
+                        </h2>
+                        <p class="qff-description">
+                            Each Fall Fest event is organized by a local community with support from IBM Quantum Network members and Qiskit Advocates. These events are designed to be welcoming spaces for quantum enthusiasts to come together, learn, and explore the fascinating world of quantum computing.
+                        </p>
+                        
+                    </div>
+                    
+                    <!-- Visual Element -->
+                    <div class="qff-intro-visual">
+                        <div class="quantum-showcase">
+                            <div class="showcase-orb showcase-orb-1">
+                                <img src="Fall Fest Graphics/Emojis/Qiskit_01.png" alt="Qiskit" class="showcase-icon">
+                            </div>
+                            <div class="showcase-orb showcase-orb-2">
+                                <img src="Fall Fest Graphics/Emojis/Circuit.png" alt="Circuit" class="showcase-icon">
+                            </div>
+                            <div class="showcase-orb showcase-orb-3">
+                                <img src="Fall Fest Graphics/Emojis/Entanglement.png" alt="Entanglement" class="showcase-icon">
+                            </div>
+                            <div class="showcase-center">
+                                <img src="Fall Fest Graphics/Badge/Badge.png" alt="QFF Badge" class="showcase-badge">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Why Madrid Section -->
+                <div class="qff-madrid">
+                    <div class="madrid-content">
+                        <div class="madrid-text">
+                            <h3>Why Madrid?</h3>
+                            <p>
+                                Universidad Autónoma de Madrid (UAM) and CPrA (UAM Competitive Programming & Research Association) are excited to host Madrid's first Qiskit Fall Fest. Our international community of quantum computing enthusiasts, together with UAM's quantum computing initiatives, provides a welcoming environment for learning and exploring quantum technologies.
+                                <br>
+                                <br>
+                                United with the growing movement of quantum computing research in Spain's public and private institutions, MadQFF'25 becomes the perfect gateway to connect the world with the expanding Spanish quantum ecosystem and the global Qiskit Fall Fest community.
+                            </p>
+
+                        </div>
+                        <div class="madrid-visual">
+                            <div class="madrid-badge">
+                                <a href="https://uam-cpra.github.io/" target="_blank">
+                                    <img src="CPrA.png" alt="CPrA" class="cpra-logo">
+                                </a>
+                                <div class="badge-text">
+                                    <span class="badge-location">Madrid, Spain</span>
+                                    <span class="badge-org">UAM - CPrA</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Call to Action -->
+                <div class="qff-cta">
+                    <div class="cta-content">
+                        <h3>Ready to Start Your Quantum Journey?</h3>
+                        <p>Join us for three weeks of quantum discovery, learning, and innovation in the heart of Madrid.</p>
+                        <div class="cta-buttons">
+                                    <a href="https://forms.gle/t8v9HdDeydXYwasa6" target="_blank" class="btn btn-primary btn-glow">
+                                        <i class="fas fa-user-plus"></i>
+                                        <span>Register :)</span>
+                                    </a>
+                                    <a href="#" class="btn btn-secondary" onclick="showBrochureWarning(); return false;">
+                                        <i class="fas fa-download"></i>
+                                        <span>Download Brochure</span>
+                                    </a>
+                                </div>
+                            </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <!-- Enhanced Section Header -->
+                <div class="about-intro">
+                    <div class="section-badge">
+                        <i class="fas fa-calendar-week"></i>
+                        <span>Program Overview</span>
+                    </div>
+                    <h2 class="about-title">
+                        Our <span class="highlight-text">3-Section Quantum Journey</span>
+                    </h2>
+                    <p class="about-description">
+                        Experience quantum computing through a progressive learning adventure at Universidad Autónoma de Madrid. From foundations to advanced applications, each week builds upon the previous to create a comprehensive quantum education experience.
+                    </p>
+                </div>
+
+                                <div class="calendar-intro">
+                    <h2 class="calendar-title">
+                    </h2>
+                    <!-- Interactive Calendar Stats -->
+                    <div class="calendar-stats">
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="21">0</div>
+                            <div class="stat-label">Days of Quantum</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="28">0</div>
+                            <div class="stat-label">Expert Sessions</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="3">0</div>
+                            <div class="stat-label">Intensive Weeks</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Enhanced Week Cards -->
+                <div class="about-grid">
+                    <div class="about-card week-card">
+                        <div class="week-header">
+                            <div class="week-number">01</div>
+                            <div class="week-icon">
+                                <img src="Fall Fest Graphics/Emojis/Timeline_01.png" alt="Timeline 1" class="card-timeline">
+                            </div>
+                        </div>
+                        <div class="week-content">
+                            <h3>Section 1: Foundations</h3>
+                            <p>Start your quantum journey with introductory sessions perfect for beginners. Learn the fundamentals of quantum computing, basic mathematics, and get hands-on with Qiskit programming for the first time.</p>
+                            <div class="week-highlights">
+                                <div class="highlight-tag">Beginner-Friendly</div>
+                                <div class="highlight-tag">Hands-on</div>
+                                <div class="highlight-tag">Fundamentals</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-card week-card">
+                        <div class="week-header">
+                            <div class="week-number">02</div>
+                            <div class="week-icon">
+                                <img src="Fall Fest Graphics/Emojis/Timeline_02.png" alt="Timeline 2" class="card-timeline">
+                            </div>
+                        </div>
+                        <div class="week-content">
+                            <h3>Section 2: Insights</h3>
+                            <p>Dive deeper with expert TEDx-style talks and cutting-edge research presentations. Discover industry applications, hardware innovations, and the future of quantum technology from leading researchers.</p>
+                            <div class="week-highlights">
+                                <div class="highlight-tag">Expert Talks</div>
+                                <div class="highlight-tag">Research</div>
+                                <div class="highlight-tag">Industry</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-card week-card">
+                        <div class="week-header">
+                            <div class="week-number">03</div>
+                            <div class="week-icon">
+                                <img src="Fall Fest Graphics/Emojis/Timeline_04.png" alt="Timeline 4" class="card-timeline">
+                            </div>
+                        </div>
+                        <div class="week-content">
+                            <h3>Section 3: Hackathons & Challenges</h3>
+                            <p>Put your knowledge to the test with hands-on challenges and algorithm competitions (and if you win, you might win some prizes :) ).</p>
+                            <div class="week-highlights">
+                                <div class="highlight-tag">Competition</div>
+                                <div class="highlight-tag">Prizes</div>
+                                <div class="highlight-tag">Practice</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calendar Section -->
+    <section id="calendar" class="calendar-section">
+        <!-- Quantum Background Effects -->
+        <div class="quantum-calendar-bg">
+            <div class="quantum-particles-calendar"></div>
+            <div class="quantum-waves"></div>
+            <div class="circuit-patterns"></div>
+        </div>
+        
+        <div class="container">
+            <div class="calendar-content">
+                <div class="weekly-calendar-container" id="weekly-view">
+                    <!-- Week 1: Foundations (Oct 27-31) -->
+                    <div class="weekly-calendar-section week1-quantum" data-week="1">
+                        <div class="weekly-grid enhanced-grid">
+                            <div class="day-column quantum-day" data-date="2025-10-27">
+                                <div class="day-header quantum-day-header">
+                                    <div class="day-name">Monday</div>
+                                    <div class="date-number">27</div>
+                                    <div class="day-glow"></div>
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week1-mon-14" data-time="14:00">
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week1-mon-15" data-time="15:00">
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week1-mon-16" data-time="16:00">
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week1-mon-17" data-time="17:00">
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week1-mon-18" data-time="18:00">
+                                </div>
+                            </div>
+                            <div class="day-column quantum-day" data-date="2025-10-28">
+                                <div class="day-header quantum-day-header">
+                                    <div class="day-name">Tuesday</div>
+                                    <div class="date-number">28</div>
+                                    <div class="day-glow"></div>
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week1-tue-15" data-time="14:00">
+
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week1-tue-16" data-time="16:00">
+
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week1-tue-17" data-time="17:00">
+
+                                </div>
+                            </div>
+                            <div class="day-column quantum-day" data-date="2025-10-29">
+                                <div class="day-header quantum-day-header">
+                                    <div class="day-name">Wednesday</div>
+                                    <div class="date-number">29</div>
+                                    <div class="day-glow"></div>
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week1-wed-14" data-time="14:00">
+
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week1-wed-15" data-time="15:00">
+
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week1-wed-16" data-time="16:00">
+
+                                </div>
+                            </div>
+                            <div class="day-column quantum-day" data-date="2025-10-30">
+                                <div class="day-header quantum-day-header">
+                                    <div class="day-name">Thursday</div>
+                                    <div class="date-number">30</div>
+                                    <div class="day-glow"></div>
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week1-thu-15" data-time="14:00">
+
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week1-thu-16" data-time="16:00">
+
+                                </div>
+                            </div>
+                            <div class="day-column quantum-day" data-date="2025-10-31">
+                                <div class="day-header quantum-day-header halloween">
+                                    <div class="day-name">Friday</div>
+                                    <div class="date-number">31</div>
+                                    <div class="halloween-icon">🎃</div>
+                                    <div class="day-glow"></div>
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week1-fri-14" data-time="14:00">
+
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week1-fri-15" data-time="15:00">
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Week 2: Industry Insights (Nov 3-7) -->
+                    <div class="weekly-calendar-section week2-quantum" data-week="2">
+                        <div class="weekly-grid enhanced-grid">
+                            <div class="day-column quantum-day" data-date="2025-11-03">
+                                <div class="day-header quantum-day-header industry">
+                                    <div class="day-name">Monday</div>
+                                    <div class="date-number">3</div>
+                                    <div class="day-glow"></div>
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week2-mon-10" data-time="10:00">
+
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week2-mon-11" data-time="11:00">
+
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week2-mon-12" data-time="12:00">
+
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week2-mon-13" data-time="13:00">
+
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week2-mon-16" data-time="16:00">
+
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week2-mon-17" data-time="17:00">
+
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week2-mon-18" data-time="18:00">
+
+                                </div>
+                            </div>
+                            <div class="day-column quantum-day" data-date="2025-11-04">
+                                <div class="day-header quantum-day-header industry">
+                                    <div class="day-name">Tuesday</div>
+                                    <div class="date-number">4</div>
+                                    <div class="day-glow"></div>
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week2-tue-10" data-time="10:00">
+
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week2-tue-11" data-time="11:00">
+
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week2-tue-12" data-time="12:00">
+
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week2-tue-13" data-time="13:00">
+
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week2-tue-16" data-time="16:00">
+
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week2-tue-17" data-time="17:00">
+
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week2-tue-18" data-time="18:00">
+
+                                </div>
+                            </div>
+                            <div class="day-column quantum-day" data-date="2025-11-05">
+                                <div class="day-header quantum-day-header industry">
+                                    <div class="day-name">Wednesday</div>
+                                    <div class="date-number">5</div>
+                                    <div class="day-glow"></div>
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week2-wed-10" data-time="10:00">
+
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week2-wed-11" data-time="11:00">
+
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week2-wed-12" data-time="12:00">
+
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week2-wed-13" data-time="13:00">
+
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week2-wed-16" data-time="16:00">
+
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week2-wed-17" data-time="17:00">
+
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week2-wed-18" data-time="18:00">
+
+                                </div>
+                            </div>
+                            <div class="day-column quantum-day" data-date="2025-11-06">
+                                <div class="day-header quantum-day-header industry">
+                                    <div class="day-name">Thursday</div>
+                                    <div class="date-number">6</div>
+                                    <div class="day-glow"></div>
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week2-thu-10" data-time="10:00">
+
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week2-thu-11" data-time="11:00">
+
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week2-thu-12" data-time="12:00">
+
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week2-thu-13" data-time="13:00">
+
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week2-thu-16" data-time="16:00">
+
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week2-thu-17" data-time="17:00">
+
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week2-thu-18" data-time="18:00">
+
+                                </div>
+                            </div>
+                            <div class="day-column quantum-day" data-date="2025-11-07">
+                                <div class="day-header quantum-day-header industry">
+                                    <div class="day-name">Friday</div>
+                                    <div class="date-number">7</div>
+                                    <div class="day-glow"></div>
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week2-fri-10" data-time="10:00">
+
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week2-fri-11" data-time="11:00">
+
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week2-fri-12" data-time="12:00">
+
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week2-fri-13" data-time="13:00">
+
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week2-fri-16" data-time="16:00">
+
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week2-fri-17" data-time="17:00">
+
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week2-fri-18" data-time="18:00">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Week 3: Closing Events (Nov 10-14) -->
+                    <div class="weekly-calendar-section week3-quantum" data-week="3">
+                        
+                        <div class="weekly-grid enhanced-grid">
+                            <div class="day-column quantum-day" data-date="2025-11-10">
+                                <div class="day-header quantum-day-header closing">
+                                    <div class="day-name">Monday</div>
+                                    <div class="date-number">10</div>
+                                    <div class="day-glow"></div>
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week3-mon-16" data-time="16:00">
+
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week3-mon-17" data-time="17:00">
+
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week3-mon-18" data-time="18:00">
+
+                                </div>
+                            </div>
+                            <div class="day-column quantum-day" data-date="2025-11-11">
+                                <div class="day-header quantum-day-header closing">
+                                    <div class="day-name">Tuesday</div>
+                                    <div class="date-number">11</div>
+                                    <div class="day-glow"></div>
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week3-tue-16" data-time="16:00">
+
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week3-tue-17" data-time="17:00">
+
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week3-tue-18" data-time="18:00">
+
+                                </div>
+                            </div>
+                            <div class="day-column quantum-day" data-date="2025-11-12">
+                                <div class="day-header quantum-day-header closing">
+                                    <div class="day-name">Wednesday</div>
+                                    <div class="date-number">12</div>
+                                    <div class="day-glow"></div>
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week3-wed-16" data-time="16:00">
+
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week3-wed-17" data-time="17:00">
+
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week3-wed-18" data-time="18:00">
+
+                                </div>
+                            </div>
+                            <div class="day-column quantum-day" data-date="2025-11-13">
+                                <div class="day-header quantum-day-header closing">
+                                    <div class="day-name">Thursday</div>
+                                    <div class="date-number">13</div>
+                                    <div class="day-glow"></div>
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week3-thu-16" data-time="16:00">
+
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week3-thu-17" data-time="17:00">
+
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week3-thu-18" data-time="18:00">
+
+                                </div>
+                            </div>
+                            <div class="day-column quantum-day" data-date="2025-11-14">
+                                <div class="day-header quantum-day-header closing">
+                                    <div class="day-name">Friday</div>
+                                    <div class="date-number">14</div>
+                                    <div class="day-glow"></div>
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week3-fri-16" data-time="16:00">
+
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week3-fri-17" data-time="17:00">
+
+                                </div>
+                                <div class="hour-slot quantum-slot" id="week3-fri-18" data-time="18:00">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event Details Modal -->
+                <div class="event-modal" id="event-modal">
+                    <div class="modal-backdrop"></div>
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title"></h3>
+                            <button class="modal-close">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="event-details">
+                                <div class="event-time"></div>
+                                <div class="event-speaker"></div>
+                                <div class="event-description"></div>
+                                <div class="event-tags"></div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-primary">Add to Calendar</button>
+                            <button class="btn btn-secondary">Share Event</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Call to Action Section -->
+    <section id="register-now" class="final-cta">
+        <!-- Enhanced Background Elements -->
+        <div class="cta-background-layer">
+            <div class="quantum-wave-1"></div>
+            <div class="quantum-wave-2"></div>
+            <div class="quantum-wave-3"></div>
+            <div class="cta-particles"></div>
+        </div>
+        
+        <div class="container">
+            <div class="final-cta-content">
+                <!-- Background Elements -->
+                <div class="cta-bg-elements">
+                    <div class="floating-element element-2">
+                        <img src="Fall Fest Graphics/Emojis/Circuit.png" alt="Circuit" class="element-icon rotate-animation" loading="lazy" decoding="async">
+                    </div>
+                    <div class="floating-element element-3">
+                        <img src="Fall Fest Graphics/Emojis/Entanglement.png" alt="Entanglement" class="element-icon float-animation" loading="lazy" decoding="async">
+                    </div>
+                    <div class="floating-element element-4">
+                        <img src="Fall Fest Graphics/Emojis/Atom_01.png" alt="Atom" class="element-icon bounce-animation" loading="lazy" decoding="async">
+                    </div>
+                    <div class="floating-element element-5">
+                        <img src="Fall Fest Graphics/Emojis/Badge_01.png" alt="Badge" class="element-icon swing-animation" loading="lazy" decoding="async">
+                    </div>
+                    <div class="floating-element element-6">
+                        <img src="Fall Fest Graphics/Emojis/Text_Quantum_01.png" alt="Quantum" class="element-icon glow-animation" loading="lazy" decoding="async">
+                    </div>
+                </div>
+
+                <!-- Main Content -->
+                <div class="cta-main">
+                    <div class="cta-header">
+                        <div class="cta-badge enhanced-badge">
+                            <i class="fas fa-rocket"></i>
+                            <span>Join the Revolution</span>
+                            <div class="badge-glow"></div>
+                        </div>
+                        <h2 class="cta-title mega-title">
+                            Ready to Enter the <span class="highlight-text quantum-highlight">Quantum World</span>?
+                        </h2>
+                        <p class="cta-description enhanced-description">
+                            Don't miss this unique opportunity to be part of the MadQFF'25. Whether you're a complete beginner or an experienced programmer, this festival is designed for you :)
+                        </p>
+    
+                    </div>
+
+                    <!-- Urgency & Registration -->
+                    <div class="cta-urgency mega-urgency">
+                        <div class="urgency-info">
+                            <div class="countdown-container enhanced-countdown">
+                                <div class="countdown-label">Festival starts in:</div>
+                                <div class="countdown-display">
+                                    <div class="countdown-item">
+                                        <span class="countdown-number" id="days">--</span>
+                                        <span class="countdown-unit">Days</span>
+                                        <div class="countdown-glow"></div>
+                                    </div>
+                                    <div class="countdown-item">
+                                        <span class="countdown-number" id="hours">--</span>
+                                        <span class="countdown-unit">Hours</span>
+                                        <div class="countdown-glow"></div>
+                                    </div>
+                                    <div class="countdown-item">
+                                        <span class="countdown-number" id="minutes">--</span>
+                                        <span class="countdown-unit">Minutes</span>
+                                        <div class="countdown-glow"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="urgency-text enhanced-urgency">
+                                <p><strong></strong>Limited Hybrid Spots Available!</strong> Secure your place in Madrid's hybrid spot.</p>
+                                <br>
+                                If you can't make it in person, join us also online from anywhere in the world!
+                            </div>
+                        </div>
+                        
+                        <div class="cta-actions enhanced-actions">
+                            <a href="https://forms.gle/t8v9HdDeydXYwasa6" target="_blank" class="btn btn-primary btn-mega super-btn">
+                                <div class="btn-content">
+                                    <i class="fas fa-user-plus"></i>
+                                    <span>Register Now - It's Free!</span>
+                                </div>
+                                <div class="btn-shimmer"></div>
+                                <div class="btn-pulse"></div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <h3>MadQFF'25</h3>
+                        <p>CPrA, Competitive Programming & Research Association</p>
+                        <p><a href="https://maps.google.com/?q=Escuela+Politécnica+Superior+UAM+Madrid" target="_blank" style="color: inherit; text-decoration: none;">Escuela Politécnica Superior - UAM</a></p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#program">3-Week Program</a></li>
+                        <li><a href="#activities">Activities</a></li>
+                        <li><a href="#calendar">Calendar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Location & Dates</h4>
+                    <ul>
+                        <li><a href="https://maps.google.com/?q=EPS+Campus+Cantoblanco+UAM+Madrid" target="_blank">EPS - Campus Cantoblanco</a></li>
+                        <li><a href="#">October 27 - November 14</a></li>
+                        <li><a href="https://maps.google.com/?q=Universidad+Autónoma+de+Madrid+Campus+Cantoblanco" target="_blank">Getting to UAM</a></li>
+                        <li><a href="https://uam-cpra.github.io/" target="_blank">About CPrA</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Competitive Programming & Research Association - CPrA | MadQFF'25 | October 27 - November 14, 2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+    <script src="script.js" defer></script>
+
+    <!-- Sponsor Display Control Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const logoVersions = document.querySelectorAll('.sponsor-item.logo-version');
+            const textVersions = document.querySelectorAll('.sponsor-item.text-version');
+            
+            if (WE_HAVE_RIGHTS_FOR_ALL_THE_LOGOS) {
+                // Show logos, hide text
+                logoVersions.forEach(item => item.style.display = 'flex');
+                textVersions.forEach(item => item.style.display = 'none');
+            } else {
+                // Show text, hide logos
+                logoVersions.forEach(item => item.style.display = 'none');
+                textVersions.forEach(item => item.style.display = 'flex');
+            }
+        });
+    </script>
+
+    <!-- Custom Script for Brochure Warning -->
+    <script>
+        function showBrochureWarning() {
+            // Create notification element
+            const notification = document.createElement('div');
+            notification.className = 'fancy-notification';
+            notification.innerHTML = `
+                <div class="notification-icon">
+                    <i class="fas fa-exclamation-triangle"></i>
+                </div>
+                <div class="notification-content">
+                    <h4>Oops! Work in Progress</h4>
+                    <p>We're still working on the brochure. It will be available soon! 📝</p>
+                </div>
+                <button class="notification-close" onclick="this.parentElement.remove()">
+                    <i class="fas fa-times"></i>
+                </button>
+            `;
+            
+            // Add to body
+            document.body.appendChild(notification);
+            
+            // Auto remove after 5 seconds
+            setTimeout(() => {
+                if (notification.parentElement) {
+                    notification.classList.add('fade-out');
+                    setTimeout(() => notification.remove(), 300);
+                }
+            }, 5000);
+        }
+    </script>
+
+    <!-- Event Modal (will be created dynamically) -->
+</body>
+</html>
